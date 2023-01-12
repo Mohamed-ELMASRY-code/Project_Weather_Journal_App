@@ -49,6 +49,7 @@ let sendData = async (url,my1Temp,feel,newDate)=>{
       thefeeling: feel,
       thedata: newDate
      };
+     try{
      //fetch method  (post) to send data to server
    let respo =await fetch(url,{
       method:'post',
@@ -59,8 +60,7 @@ let sendData = async (url,my1Temp,feel,newDate)=>{
       body:JSON.stringify(myOwnData),
 
    });
-   try{
-      let thedataa = await respo.json();
+  
    }catch(erorr){
       console.log(erorr)
    }
