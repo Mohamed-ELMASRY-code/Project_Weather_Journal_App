@@ -1,3 +1,4 @@
+
 body{
     background: #fffff8;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -7,9 +8,9 @@ body{
     display: grid;
     grid-auto-rows: minmax(150px, auto);
     /* grid-template-columns:  */
-    height:100vh;
+    height:100%;
     background: #f23557;
-    color: #f0d43a;
+    color: #030303;
     justify-content: center;
     grid-gap: 1em;
     font-size: 20px;
@@ -26,6 +27,7 @@ body{
 
 #entryHolder{
 
+
 }
 
 #date{
@@ -37,6 +39,7 @@ body{
 }
 
 #content{
+
 
 }
 
@@ -58,17 +61,18 @@ input{
     height: 60px;
     width: 320px;
     background:#22b2da;
-    color: #f0d43a;
+    color: #0c0c0c;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
     border: none;
 }
 
 button{
+    
     width: 200px;
     height: 100px;
-    background: #3b4a6b;
-    color: #f0d43a;
+    background: #0b0b0b;
+    color: #fefefd;
     font-size: 26px;
     font-family: 'Oswald', sans-serif;
     border: none;
@@ -80,7 +84,7 @@ h1{
 
 textarea{
     background:#22b2da;
-    color: #f0d43a;
+    color: #030303;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
 }
@@ -93,19 +97,19 @@ button:focus {
 }
 /* Style for Placeholder Text*/
 ::placeholder { /* Firefox, Chrome, Opera */ 
-    color: #f0d43a; 
+    color: #0e0c00; 
     font-family: 'Oswald', sans-serif;
 
 } 
   
 :-ms-input-placeholder { /* Internet Explorer 10-11 */ 
-    color: #f0d43a; 
+    color: #141414; 
     font-family: 'Oswald', sans-serif;
 
 } 
   
 ::-ms-input-placeholder { /* Microsoft Edge */ 
-    color: #f0d43a; 
+    color: #0b0b0b; 
     font-family: 'Oswald', sans-serif;
 
 } 

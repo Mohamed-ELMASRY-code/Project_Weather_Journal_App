@@ -1,6 +1,7 @@
 // Setup empty JS object to act as endpoint for all routes
 
 
+
 //**********************
 //install nodemon to fast repair the server without close and open it once anything change in code
 // script (start) contains the path on server 
@@ -14,16 +15,16 @@ let Express = require ('express');
 let cors = require ('cors');
 //body-parser used to mange data get in or out from server
 let bodyParser = require ('body-parser');
-
-
 /*
+{
+
 //express used to make local server instead of global server
 import Express from "express";
 //body-parser used to mange data get in or out from server
 import bodyParser from "body-parser";
 //cors is the tool that help local server  to connect with browser
-import cors from "cors";**/
-
+import cors from "cors";
+};**/
 // object to store data
 projectData = {};
 // run local server 
@@ -58,5 +59,22 @@ webApp.listen(3030,()=>{
 //install nodemon to fast repair the server without close and open it once anything change in code
 // script (start) contains the path on server 
 //************************************************ 
+
+
+
+
+//get request to send data from server to browser take two parameter first is the route to send second arrow function to send data 
+webApp.get('/send',(req,res)=>{
+    res.send(projectData);
+});
+
+
+
+//post request to save data come from browser into server  take two parameter first is the route to store second arrow function to post data 
+webApp.post('/store',(req,res)=>{
+    projectData=req.body;
+    res.send(projectData);
+    console.log(projectData);
+});
 
 
